@@ -72,3 +72,14 @@ app.post('/signup', (req, res) => {
 app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}/`);
 });
+document.addEventListener('DOMContentLoaded', function() {
+    const signupForm = document.getElementById('signup-form');
+    const passwordInput = document.getElementById('password');
+    
+    signupForm.addEventListener('submit', function(event) {
+        if (passwordInput.value.length < 6) {
+            alert('Password must be at least 6 characters long.');
+            event.preventDefault(); // Prevent form submission if validation fails
+        }
+    });
+});
