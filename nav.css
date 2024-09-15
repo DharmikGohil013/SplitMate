@@ -1,0 +1,356 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation Bar Styling */
+header {
+    background: linear-gradient(135deg, #6e3bff, #a337ff);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    padding: 15px 0;
+    position: relative;
+}
+
+/* Navigation Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo Styling */
+.logo {
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Navigation Links */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+/* Logo Image in Navigation */
+.logo-img {
+    width: 80px;
+    height: auto;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    object-fit: contain;
+}
+
+/* Authentication Buttons */
+.auth-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+/* Luxurious CTA Button */
+.cta-btn {
+    background: linear-gradient(135deg, #ff5f6d, #ffc371);
+    color: white;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+    background: linear-gradient(135deg, #ffc371, #ff5f6d);
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-3px);
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    position: relative;
+}
+
+    /* Close Button */
+    .close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 24px;
+        cursor: pointer;
+        color: #333;
+    }
+
+    .close:hover {
+        color: #ff5f6d;
+    }
+
+    /* Modal Form Styling */
+    .modal h2 {
+        margin-bottom: 20px;
+        font-size: 24px;
+        color: #333;
+        font-family: 'Playfair Display', serif;
+    }
+
+    .modal label {
+        display: block;
+        margin: 10px 0 5px;
+        font-size: 16px;
+        color: #555;
+    }
+
+    .modal input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+
+    .modal-btn {
+        background: linear-gradient(135deg, #6e3bff, #a337ff);
+        color: white;
+        padding: 12px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .modal-btn:hover {
+        background: linear-gradient(135deg, #a337ff, #6e3bff);
+    }
+
+    /* Footer Styles */
+    footer {
+        background-color: #333;
+        color: white;
+        padding: 40px 20px;
+    }
+
+    .footer-wrap {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .widgetFooter {
+        flex: 1;
+        margin: 0 10px;
+    }
+
+    .widgetFooter h4 {
+        font-size: 18px;
+        margin-bottom: 20px;
+        font-family: 'Playfair Display', serif;
+        text-transform: uppercase;
+    }
+
+    #footerUsefulLink,
+    #footerMediaLinks {
+        list-style: none;
+    }
+
+    #footerUsefulLink li,
+    #footerMediaLinks li {
+        margin-bottom: 10px;
+    }
+
+    #footerUsefulLink a,
+    #footerMediaLinks a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    #footerUsefulLink a:hover,
+    #footerMediaLinks a:hover {
+        text-decoration: underline;
+    }
+
+    .mediaLinksIcons {
+        margin-right: 10px;
+    }
+
+    .footerCopy {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 14px;
+    }
+
+    .footerCopy i {
+        color: red;
+    }
+    html, body{
+        margin: 0;
+        padding: 0;
+      }
+      footer{
+        width: 100%;
+        min-height: 300px;
+        max-height: auto;
+        background-color: rgba(0,0,0,0.9);
+        margin-top: 10px;
+        clear: both;
+      }
+      footer .footer-wrap{
+        width: 80%;
+        margin: 0 auto;
+        padding-left: 9%;
+        color: white;
+      }
+      .widgetFooter{
+        width: calc(85%/3);
+        height: auto;
+        float: left;
+        padding: 2.5%;
+        text-align: left;
+      }
+      h4.uppercase{
+        text-transform: uppercase;
+      }
+      ul#footerUsefulLink, ul#footerMediaLinks{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        line-height: 40px;
+        text-transform: capitalize;
+      }
+      ul#footerUsefulLink li, ul#footerMediaLinks li{
+        cursor: pointer;
+        /* transition: border-bottom 3s ease-in; */
+      }
+      ul#footerUsefulLink li:hover .usefulLinksIcons, ul#footerUsefulLink li:hover a{
+         color: #00CED1;
+         /* border-bottom: 1px solid red; */
+      }
+      ul#footerMediaLinks li:hover span.fb, ul#footerMediaLinks li:hover a.fb { color: #3b5998; }
+      ul#footerMediaLinks li:hover span.twit, ul#footerMediaLinks li:hover a.twit { color: #1DA1F2; }
+      ul#footerMediaLinks li:hover span.insta, ul#footerMediaLinks li:hover a.insta { color: #ffc838; }
+      ul#footerMediaLinks li:hover span.git, ul#footerMediaLinks li:hover a.git { color: #f1502f; }
+      
+      div#footerLogo img{
+        width: 50%;
+        margin: 25% 0;
+      }
+      
+      div.footerCopy{
+        clear: both;
+        color: white;
+        text-align: center;
+        padding-bottom: 5px;
+        border-top: 1px solid #ccc;
+      }
+      
+      @media (max-width:800px){
+        footer .footer-wrap{
+          width: 100%;
+          padding: 0;
+        }
+        .widgetFooter:not(:nth-of-type(2)){
+          width: calc(90%/2);
+          text-align: center;
+          font-size: 0.9em;
+        }
+        .widgetFooter:nth-of-type(2){
+          display: none;
+        }
+        div.footerCopy{
+          font-size: 0.8em;
+        }
+      }
+      @media (max-width:600px){
+        .widgetFooter:not(:nth-of-type(2)){
+          text-align: left;
+        }
+      }
+      @media (max-width:500px){
+        footer{
+          min-height: auto;
+        }
+        .widgetFooter:not(:nth-of-type(2)){
+          width: 100%;
+          padding: 0;
+          text-align: center;
+        }
+        ul#footerUsefulLink, ul#footerMediaLinks{
+          display: flex;
+        }
+        ul#footerUsefulLink li, ul#footerMediaLinks li{
+          float: left;
+          flex: 1;
+          text-align: center;
+          font-size: 1.5em;
+        }
+        ul#footerUsefulLink li a, ul#footerMediaLinks li a{
+          display: none;
+        }
+        ul#footerUsefulLink li:hover, ul#footerUsefulLink li:hover .usefulLinksIcons, ul#footerUsefulLink li:hover a{
+           color: white;
+           background-color: #00CED1;
+        }
+        ul#footerMediaLinks li.media1:hover, ul#footerMediaLinks li:hover span.fb, ul#footerMediaLinks li:hover a.fb { background-color: #3b5998; color: white; }
+        ul#footerMediaLinks li.media2:hover, ul#footerMediaLinks li:hover span.twit, ul#footerMediaLinks li:hover a.twit { background-color: #1DA1F2; color: white; }
+        ul#footerMediaLinks li.media3:hover, ul#footerMediaLinks li:hover span.insta, ul#footerMediaLinks li:hover a.insta { background-color: #ffc838; color: white; }
+        ul#footerMediaLinks li.media4:hover, ul#footerMediaLinks li:hover span.git, ul#footerMediaLinks li:hover a.git { background-color: #f1502f; color: white; }
+      }
+      

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - SplitMate</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <div class="logo">
+                <img src="R.png" alt="SplitMate Logo" class="logo-img">
+                <span class="logo-name">SplitMate</span>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="signin.html">Sign In</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Sign-Up Form -->
+    <main class="form-container">
+        <div class="container">
+            <h1>Create Your Account</h1>
+            <form id="signup-form" action="signup.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="contact">Contact Details:</label>
+                <input type="text" id="contact" name="contact" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <div class="form-options">
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms">I agree to the <a href="#">terms and conditions</a></label>
+                </div>
+                <button type="submit" class="cta-button submit-button">Sign Up</button>
+            </form>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 SplitMate. All rights reserved.</p>
+            <p>Contact us: <a href="mailto:support@expensemanager.com">support@expensemanager.com</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
