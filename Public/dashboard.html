@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard - SplitMate</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles1.css">
 </head>
 <body>
     <!-- Navbar -->
@@ -16,16 +16,43 @@
             </div>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="signin.html">log out</a></li>
+                <li><a href="signin.html">logout</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Dashboard Content -->
+    <!-- Dashboard Main Content -->
     <main class="dashboard-container">
         <div class="container">
-            <h1>Welcome to Your Dashboard</h1>
-            <p>Here you can manage your expenses, view reports, and more.</p>
+            <h1>Welcome to your Dashboard</h1>
+            <div class="dashboard-sections">
+                <section class="dashboard-section">
+                    <h2>Add Friend</h2>
+                    <form id="add-friend-form">
+                        <label for="friend-email">Friend's Email:</label>
+                        <input type="email" id="friend-email" name="friend-email" required>
+                        <button type="submit" class="cta-button">Add Friend</button>
+                    </form>
+                </section>
+
+                <section class="dashboard-section">
+                    <h2>Group</h2>
+                    <p>Manage your groups here. You can create, join, or leave groups.</p>
+                    <!-- Add any group-related features or links here -->
+                </section>
+
+                <section class="dashboard-section">
+                    <h2>Profile</h2>
+                    <p>Update your profile information here.</p>
+                    <!-- Add profile management features or links here -->
+                </section>
+
+                <section class="dashboard-section">
+                    <h2>Transaction</h2>
+                    <p>View and manage your transactions here.</p>
+                    <!-- Add transaction-related features or links here -->
+                </section>
+            </div>
         </div>
     </main>
 
