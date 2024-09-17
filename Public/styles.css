@@ -112,3 +112,19 @@ footer a {
     color: #007bff;
     text-decoration: none;
 }
+.google-button {
+    background-color: #4285F4;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    margin: 20px auto;
+}
+
+.google-button:hover {
+    background-color: #357ae8;
+}

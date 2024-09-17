@@ -3,47 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign In - SplitMate</title>
+    <title>Sign In with Google</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="container navbar-container">
-            <div class="logo">
-                <img src="R.png" alt="SplitMate Logo" class="logo-img">
-                <span class="logo-name">SplitMate</span>
-            </div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="signup.html">Sign Up</a></li>
-                <li><a href="signin.html">Dashboard</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Sign-In Form -->
-    <main class="form-container">
-        <div class="container">
-            <h1>Sign In</h1>
-            <form id="signin-form" action="/signin" method="post">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
-                <button type="submit" class="cta-button submit-button">Sign In</button>
-            </form>
-        </div>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 SplitMate. All rights reserved.</p>
-            <p>Contact us: <a href="mailto:support@expensemanager.com">support@expensemanager.com</a></p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+    <div class="container">
+        <h1>Sign In with Google</h1>
+        <a href="/auth/google">
+            <button class="cta-button">Sign in with Google</button>
+        </a>
+    </div>
 </body>
 </html>

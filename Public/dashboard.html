@@ -26,14 +26,16 @@
         <div class="container">
             <h1>Welcome to your Dashboard</h1>
             <div class="dashboard-sections">
-                <section class="dashboard-section">
-                    <h2>Add Friend</h2>
-                    <form id="add-friend-form">
-                        <label for="friend-email">Friend's Email:</label>
-                        <input type="email" id="friend-email" name="friend-email" required>
-                        <button type="submit" class="cta-button">Add Friend</button>
-                    </form>
-                </section>
+                <!-- Add Friend Section in Dashboard -->
+<section class="dashboard-section">
+    <h2>Add Friend</h2>
+    <form id="add-friend-form" action="/add-friend" method="POST">
+        <label for="friend-email">Friend's Email:</label>
+        <input type="email" id="friend-email" name="friend-email" required>
+        <button type="submit" class="cta-button">Add Friend</button>
+    </form>
+</section>
+
 
                 <section class="dashboard-section">
                     <h2>Group</h2>
